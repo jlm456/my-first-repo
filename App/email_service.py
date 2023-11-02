@@ -40,27 +40,29 @@ def send_email(recipient_address=SENDER_ADDRESS, subject="[Shopping Cart App] Te
         print(err)
 
 
+if __name__ == "__main__":
+
+    user_address = input("Please enter your email address: ")
 
 
-user_address = input("Please enter your email address: ")
+    my_content = """
 
+        <img
+            src="https://img.freepik.com/free-vector/flat-ice-cream-collection_23-2148982427.jpg"
+            alt="image of an ice cream"
+            height=100
+        >
 
-my_content = """
+        <h1>Ice Cream Shop Menu</h1>
 
-    <img
-        src="https://img.freepik.com/free-vector/flat-ice-cream-collection_23-2148982427.jpg"
-        alt="image of an ice cream"
-        height=100
-    >
+        <p>Most popular flavors:</p>
 
-    <h1>Ice Cream Shop Menu</h1>
+        <ul>
+            <li>Vanilla Bean </li>
+            <li>Choc </li>
+            <li>Strawberry</li>
+        </ul>
+    """
+    send_email(html_content=my_content, recipient_address=user_address)
 
-    <p>Most popular flavors:</p>
-
-    <ul>
-        <li>Vanilla Bean </li>
-        <li>Choc </li>
-        <li>Strawberry</li>
-    </ul>
-"""
-send_email(html_content=my_content, recipient_address=user_address)
+    
