@@ -56,3 +56,13 @@ Send an example email:
 python app/email_service.py
 ```
 
+
+
+##Testing
+
+Run Tests:
+
+```sh
+pytest
+```
+
