@@ -1,8 +1,6 @@
 
 
-#IMPORTS AT THE TOP
-
-
+# IMPORTS AT THE TOP
 
 import os
 import json
@@ -110,3 +108,26 @@ if __name__ == "__main__":
     """
 
     send_email(recipient_address=user_address, html_content=content, subject="Your Unemployment Report")
+
+
+
+
+
+6:15
+some tests:
+
+# this is the "test/unemployment_test.py" file...
+
+from app.unemployment import fetch_data
+
+
+
+def test_fetch_data():
+    data = fetch_data()
+
+    assert isinstance(data, list)
+    #assert data[0] == {'date': '2023-10-01', 'value': '3.9'}
+    assert len(data) > 100
+
+    assert isinstance(data[0], dict)
+    assert list(data[0].keys()) == ["date", "value"]
