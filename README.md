@@ -56,6 +56,10 @@ Send an example email:
 python app/email_service.py
 ```
 
+```sh
+# Mac OS:
+FLASK_APP=web_app flask run
+```
 
 
 ##Testing
