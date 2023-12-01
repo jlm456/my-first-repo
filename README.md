@@ -5,7 +5,7 @@
 Create and activate a virtual environment:
 
 ```sh
-conda create -n my-first-env python=3.9.13
+conda create -n my-first-env python=3.10
 
 conda activate my-first-env
 
