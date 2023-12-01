@@ -1,5 +1,3 @@
-#This is the "email_service.py" file...
-
 
 import os
 
@@ -35,6 +33,7 @@ def send_email(recipient_address=SENDER_ADDRESS, subject="[Shopping Cart App] Te
         print(response.body)
         print(response.headers)
         return response.status_code
+
     except Exception as err:
         print(type(err))
         print(err)
@@ -42,9 +41,10 @@ def send_email(recipient_address=SENDER_ADDRESS, subject="[Shopping Cart App] Te
 
 
 
-
 if __name__ == "__main__":
 
+    # ONLY WANT TO DO IF RUNNING THIS FILE FROM COMMAND LINE
+    # (NOT IF IMPORTING A FUNCTION FROM THIS FILE)
     user_address = input("Please enter your email address: ")
 
 
@@ -67,5 +67,3 @@ if __name__ == "__main__":
         </ul>
     """
     send_email(html_content=my_content, recipient_address=user_address)
-
-    

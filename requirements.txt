@@ -1,15 +1,29 @@
 #this is the 'requirements.txt' file...
 
+
+
+# this is the "requirements.txt" file...
+
+
 requests
 
 plotly
 
+# ImportError: Plotly express requires pandas to be installed.
 pandas
 
 python-dotenv
 
 sendgrid==6.5.0
 
-#TEST
+
+flask
+
+
+# TEST
 
 pytest
+
+
+# PRODUCTION SERVER NEEDS THIS TO RUN THE WEB APP:
+gunicorn
