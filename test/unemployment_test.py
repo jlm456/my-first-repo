@@ -1,4 +1,3 @@
-#this is the unemployment_test.py file...
 
 from app.unemployment import fetch_data
 
